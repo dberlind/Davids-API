@@ -2,3 +2,22 @@
 title: Davids API
 version: v1
 baseUri: http://api.samplehost.com
+
+/friends:
+  description: This is the friends resource
+  get:
+    description: Get a list of friends and their main hobby if they have one
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              !include examples/friendList.json
+  post:
+    description: Add a new friend to the list
+    responses:
+      201:
+        body:
+          application/json:
+            schema:
+              !include /schemas/friendsSchema.json
