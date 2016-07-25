@@ -4,6 +4,6 @@
 
   "type"       : "object",
   "properties" : {
-    "friends" : { "$ref" : "#/definitions/person"}
+    "friends" : { "$ref" : "peopleSchema#/definitions/person"}
   }
 }
