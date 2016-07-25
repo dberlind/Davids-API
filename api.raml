@@ -3,6 +3,9 @@ title: Davids API
 version: v1
 baseUri: http://api.samplehost.com
 
+schemas:
+  friend : !include schemas/newPeopleSchema.json
+
 /friends:
   description: This is the friends resource
   get:
@@ -19,5 +22,5 @@ baseUri: http://api.samplehost.com
       201:
         body:
           application/json:
-            schema:
-              !include schemas/peopleSchema.json
+            schema: friend
+            example: !include examples/friendList.json

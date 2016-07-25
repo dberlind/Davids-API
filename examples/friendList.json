@@ -1,22 +1,5 @@
-"friends" : [
-     {
+{
         "txFirstName" : "John",
         "txLastName"  : "Drobin",
         "txHobby"     : "Stamp Collecting"
-      },
-      {
-         "txFirstName" : "Billy",
-         "txLastName"  : "Savarese",
-         "txHobby"     : "Coing Collecting"
-       },
-       {
-          "txFirstName" : "Lisa",
-          "txLastName"  : "Lansner",
-          "txHobby"     : "Gardening"
-        },
-        {
-           "txFirstName" : "Judy",
-           "txLastName"  : "Braverman",
-           "txHobby"     : "Horseback Riding"
-         }
-]
+}

@@ -1,20 +1,19 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema",
 
-  "definitions" : {
-    "person" : {
-        "type"       : "object",
-        "properties" : {
-            "txFirstName" : { "type" : "string"},
-            "txLastName"  : { "type" : "string"},
-            "txHobby"     : { "type" : "string"}
-      },
-      "required" : ["txFirstName", "txLastName"]
-    }
-  },
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema",
+	"id": "http://jsonschema.net",
 
-  "type"       : "object",
-  "properties" : {
-    "friend" : { "$ref" : "#/definitions/person"}
-  }
+	"properties": {
+		"txFirstName": {
+			"type": "string"
+		},
+		"txLastName": {
+			"type": "string"
+		},
+		"txHobby": {
+			"type": "string"
+		},
+    "required": ["txFirstName", "txLastName"]
+	}
 }
