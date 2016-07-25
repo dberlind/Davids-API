@@ -13,7 +13,6 @@
 		},
 		"txHobby": {
 			"type": "string"
-		},
-    "required": ["txFirstName", "txLastName"]
+		}
 	}
 }
