@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id"     : "https://raw.githubusercontent.com/dberlind/Davids-API/master/schemas/",
+
+  "type"       : "object",
+  "properties" : {
+    "friends" : { "$ref" : "#/definitions/person"}
+  }
+}

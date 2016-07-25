@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id"     : "https://raw.githubusercontent.com/dberlind/Davids-API/master/schemas/",
+
+  "definitions" : {
+    "person" : {
+        "type"       : "object",
+        "properties" : {
+            "txFirstName" : { "type" : "string"},
+            "txLastName"  : { "type" : "string"},
+            "txHobby"     : { "type" : "string"}
+      },
+      "required" : ["txFirstName", "txLastName"]
+    }
+  }
+}
