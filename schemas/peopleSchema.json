@@ -11,5 +11,10 @@
       },
       "required" : ["txFirstName", "txLastName"]
     }
+  },
+
+  "type"       : "object",
+  "properties" : {
+    "friend" : { "$ref" : "#/definitions/person"}
   }
 }
