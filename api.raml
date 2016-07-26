@@ -5,6 +5,7 @@ baseUri: http://api.samplehost.com
 
 schemas:
   friend : !include schemas/newPeopleSchema.json
+  song   : !include schemas/SongSchema.json
 
 /friends:
   description: This is the friends resource
@@ -23,4 +24,24 @@ schemas:
         body:
           application/json:
             schema: friend
-            example: !include examples/friendList.json
+
+/songs:
+  description: this is a song resource
+  get:
+    description: get a list of songs
+    responses:
+      200:
+        body:
+          application/json:
+            schema: song        
+            example:
+              !include examples/sampleSong.json    
+  post:
+    description: Add a new song to the list
+    responses:
+      201:
+        body:
+          application/json:
+            schema: song
+            example: !include examples/sampleSong.json
+  

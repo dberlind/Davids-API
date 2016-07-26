@@ -16,6 +16,6 @@
   "type"       : "object",
   "required"   : true,
   "properties" : {
-    "friend" : { "$ref" : "#/definitions/person"}
+  "friend" : { "$ref" : "#/definitions/person"}
   }
 }

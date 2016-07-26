@@ -1,5 +1,4 @@
 {
-
 	"type": "object",
 	"$schema": "http://json-schema.org/draft-04/schema",
 	"id": "http://jsonschema.net",
@@ -11,8 +10,9 @@
 		"txLastName": {
 			"type": "string"
 		},
-		"txHobby": {
-			"type": "string"
-		}
+    "txHobby": {
+      "type": "string"
+    },
+    "required" : ["txFastName", "txLastName"]
 	}
 }
