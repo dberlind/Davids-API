@@ -25,11 +25,14 @@ schemas:
         schema: friend
         example: !include examples/friendList.json
     responses:
-      201:
+      200:
         body:
           application/json:
-            schema: friend
-
+            example: { "message": "The friend has been properly entered" }
+      400:
+        body:
+          application/json:
+            example: {"message": "Something went wrong"}
 /songs:
   description: this is a song resource
   get:
@@ -47,9 +50,13 @@ schemas:
         schema: song
         example: !include examples/sampleSong.json 
     responses:
-      201:
+      200:
         body:
           application/json:
-            schema: song
-            example: !include examples/sampleSong.json
+            example: { "message": "The song has been properly entered" }
+      400:
+        body:
+          application/json:
+            example: {"message": "Something went wrong"}
+              
   
