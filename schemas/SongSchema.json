@@ -12,7 +12,7 @@
     },
 		"albumId": {
 			"type": "string"
-		},
-    "required" : ["songTitle"]
-	}
+		}
+	},
+  "required" : ["songTitle", "albumId" ]
 }
