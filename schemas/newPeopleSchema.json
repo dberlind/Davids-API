@@ -13,6 +13,6 @@
     "txHobby": {
       "type": "string"
     },
-    "required" : ["txFastName", "txLastName"]
+    "required" : ["txFirstName", "txLastName"]
 	}
 }
