@@ -1,38 +1,38 @@
 #%RAML 1.0
 title: Davids API
 version: v1
-#baseUri: http://api.samplehost.com
-baseUri: https://mocksvc.mulesoft.com/mocks/a5911c7c-d6e8-4519-80ce-8aae0b44b03c
+baseUri: http://api.samplehost.com
 
 schemas:
   friend : !include schemas/newPeopleSchema.json
   song   : !include schemas/SongSchema.json
 
 /friends:
-  description: This is the friends resource
-  get:
-    description: Get a list of friends and their main hobby if they have one
-    responses:
-      200:
-        body:
-          application/json:
-            example:
-              !include examples/friendList.json
-  post:
-    description: Add a new friend to the list
-    body:
-      application/json:
-        schema: friend
-        example: !include examples/friendList.json
-    responses:
-      200:
-        body:
-          application/json:
-            example: { "message": "The friend has been properly entered" }
-      400:
-        body:
-          application/json:
-            example: {"message": "Something went wrong"}
+    description: This is the friends resource
+    get:
+      description: Get a list of friends and their main hobby if they have one
+      responses:
+        200:
+          body:
+            application/json:
+              example:
+                !include examples/friendList.json
+    post:
+      description: Add a new friend to the list
+      body:
+        application/json:
+          schema: friend
+          example: !include examples/friendList.json
+      responses:
+        200:
+          body:
+            application/json:
+              example: { "message": "The friend has been properly entered" }
+        400:
+          body:
+            application/json:
+              example: {"message": "Something went wrong"}
+
 /songs:
   description: this is a song resource
   get:
@@ -41,14 +41,15 @@ schemas:
       200:
         body:
           application/json:
-            schema: song        
-            example: !include examples/sampleSong.json    
+            schema: song
+            example:
+              !include examples/sampleSong.json
   post:
     description: Add a new song to the list
     body:
       application/json:
         schema: song
-        example: !include examples/sampleSong.json 
+        example: !include examples/sampleSong.json
     responses:
       200:
         body:
@@ -58,5 +59,3 @@ schemas:
         body:
           application/json:
             example: {"message": "Something went wrong"}
-              
-  
