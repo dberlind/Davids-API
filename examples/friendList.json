@@ -1,5 +1,5 @@
 {
-        "txFirstName" : "John",
-        "txLastName"  : "Drobin",
-        "txHobby"     : "Stamp Collecting"
+  "txFirstName" : "John",
+  "txLastName"  : "Drobin",
+  "txHobby"     : "Stamp Collecting"
 }

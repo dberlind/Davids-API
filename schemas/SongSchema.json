@@ -1,16 +1,18 @@
 {
 	"type": "object",
-	"$schema": "http://json-schema.org/draft-03/schema",
+	"$schema": "http://json-schema.org/draft-04/schema",
 	"id": "http://jsonschema.net",
 
 	"properties": {
 		"songTitle": {
-			"type": "string",
-			"required": true
+			"type": "string"
 		},
+    "songId": {
+      "type": "string"
+    },
 		"albumId": {
-			"type": "string",
-			"required": true
-		}
+			"type": "string"
+		},
+    "required" : ["songTitle"]
 	}
 }

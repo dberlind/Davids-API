@@ -1,7 +1,8 @@
 #%RAML 1.0
 title: Davids API
 version: v1
-baseUri: http://api.samplehost.com
+#baseUri: http://api.samplehost.com
+baseUri: https://mocksvc.mulesoft.com/mocks/a5911c7c-d6e8-4519-80ce-8aae0b44b03c
 
 schemas:
   friend : !include schemas/newPeopleSchema.json
@@ -19,6 +20,10 @@ schemas:
               !include examples/friendList.json
   post:
     description: Add a new friend to the list
+    body:
+      application/json:
+        schema: friend
+        example: !include examples/friendList.json
     responses:
       201:
         body:
@@ -34,10 +39,13 @@ schemas:
         body:
           application/json:
             schema: song        
-            example:
-              !include examples/sampleSong.json    
+            example: !include examples/sampleSong.json    
   post:
     description: Add a new song to the list
+    body:
+      application/json:
+        schema: song
+        example: !include examples/sampleSong.json 
     responses:
       201:
         body:

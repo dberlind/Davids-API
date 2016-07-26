@@ -10,9 +10,9 @@
 		"txLastName": {
 			"type": "string"
 		},
-    "txHobby": {
-      "type": "string"
-    },
-    "required" : ["txFirstName", "txLastName"]
+		"txHobby": {
+			"type": "string"
+		},
+		"required": ["txFirstName", "txLastName"]
 	}
 }
